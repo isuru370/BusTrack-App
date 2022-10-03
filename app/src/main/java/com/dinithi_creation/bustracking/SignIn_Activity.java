@@ -37,7 +37,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class SignIn_Activity extends AppCompatActivity {
 
-    private TextView txtSignUp, txtForgetPass;
+    private TextView txtSignUp, txtForgetPass,adminsignup;
     private EditText edtEmailSignIn, edtPasswordSignIn;
     private Button btnLogin;
     private ProgressBar progressBar;
@@ -60,6 +60,7 @@ public class SignIn_Activity extends AppCompatActivity {
         edtPasswordSignIn = findViewById(R.id.passwordSignIn);
         btnLogin = findViewById(R.id.btnLogIn);
         progressBar = findViewById(R.id.progressBar);
+        adminsignup = findViewById(R.id.admin_signup);
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -118,6 +119,14 @@ public class SignIn_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkValidation();
+            }
+        });
+
+        adminsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignIn_Activity.this,Admin_register.class));
+                finish();
             }
         });
     }

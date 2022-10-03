@@ -19,7 +19,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/user"/>
+            android:src="@drawable/user"
+            app:shapeAppearanceOverlay="@style/round_image"/>
 
         <TextView
             android:id="@+id/pronameid"

@@ -60,11 +60,6 @@ public class Driver_Home_Activity extends AppCompatActivity {
             }
         });
 
-        driverditalis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Driver_Home_Activity.this,DriverDitels.class));
-            }
-        });
+
     }
 }

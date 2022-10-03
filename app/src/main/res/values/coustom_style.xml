@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="round_image">
+        <item name="cornerSize">
+            40%
+        </item>
+    </style>
+
+    <style name="round_image_shep">
+        <item name="cornerSize">
+            15%
+        </item>
+    </style>
+
+
+</resources>

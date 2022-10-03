@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,6 @@
     tools:context=".SignIn_Activity"
     android:background="#FBFBF9"
    >
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +32,7 @@
         <EditText
             android:id="@+id/emailSignIn"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
@@ -56,7 +55,7 @@
             <EditText
                 android:id="@+id/passwordSignIn"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
@@ -69,6 +68,15 @@
                 android:textColorHint="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/txtForgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text=" Forget Password?"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold|italic" />
 
         <Button
             android:id="@+id/btnLogIn"
@@ -105,18 +113,21 @@
                 android:text=" Sign Up"
                 android:textColor="@color/purple_500"
                 android:textStyle="bold|italic" />
-        </LinearLayout>
 
+
+        </LinearLayout>
         <TextView
-            android:id="@+id/txtForgetpassword"
+            android:id="@+id/admin_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text=" Forget Password?"
-            android:textColor="@color/purple_500"
-            android:textStyle="bold|italic" />
+            android:text="Admin Signup Panel"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#F10636" />
+
+
+
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -130,4 +141,5 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

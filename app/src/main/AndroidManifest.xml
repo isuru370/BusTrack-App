@@ -29,6 +29,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusTracking">
         <activity
+            android:name=".Admin_register"
+            android:exported="false" />
+        <activity
             android:name=".driverprofile"
             android:exported="false" />
         <activity

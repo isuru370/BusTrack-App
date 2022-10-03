@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_register">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp">
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/adminproimgid"
+           android:layout_width="180dp"
+           android:layout_height="180dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/th"
+           app:shapeAppearanceOverlay="@style/round_image"/>
+
+       <TextView
+           android:id="@+id/adminselectimageid"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="select profile photo"
+           android:layout_gravity="center_horizontal"
+           android:textSize="14dp"
+           android:textStyle="bold"/>
+
+       <EditText
+           android:id="@+id/adminid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:hint="Enter Admin id"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:id="@+id/adminnxtbtnid"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Next"
+           android:layout_gravity="right"
+           android:background="@color/purple_700"
+           android:textColor="@color/white"/>
+
+       <EditText
+           android:id="@+id/adminnameid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter fullname"
+           android:layout_marginTop="10dp"/>
+       <EditText
+           android:id="@+id/adminemailid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Email"
+           android:inputType="textEmailAddress"
+           android:layout_marginTop="10dp"/>
+       <EditText
+           android:id="@+id/adminphonenoid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter phone number"
+           android:inputType="number"
+           android:layout_marginTop="10dp"/>
+       <EditText
+           android:id="@+id/adminpassworadid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter passworad"
+           android:inputType="numberPassword"
+           android:layout_marginTop="10dp"/>
+       <EditText
+           android:id="@+id/admincomformpasswordid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter comform passworad"
+           android:inputType="numberPassword"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:id="@+id/adminsubmitid"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:text="Submitdata"
+           android:layout_gravity="center_horizontal"
+           android:background="@color/purple_700"
+           android:layout_marginTop="20dp"
+           android:textAllCaps="false"
+           android:textColor="@color/white"/>
+
+   </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
