@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BusTracking</string>
+    <string name="title_activity_passenger_maps">PassengerMapsActivity</string>
+    <string name="title_activity_maps_start_driver">MapsStartDriver_Activity</string>
+</resources>

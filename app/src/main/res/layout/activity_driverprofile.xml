@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".driverprofile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/proimgid"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/pronameid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulama warnadasa"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/prostatusid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Status"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/proemaiid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL :- isurufernando000@gmail.com"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/prophonenoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NO :- 0768971213"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/prolicenceid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LICENCE NO :- 7787964545-87"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/pronicid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIC NO :- 982282055V"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/prohomeaddid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME ADDRESS :-  4th mail post padavi parakramapura"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/prolincence1id"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:src="@drawable/th"/>
+            <ImageView
+                android:id="@+id/prolincence2id"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/th"/>
+
+
+        </LinearLayout>
+
+<Button
+    android:id="@+id/proacseptbtnid"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Acsept"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/purple_700"
+    android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

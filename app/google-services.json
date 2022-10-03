@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "730674720923",
+    "project_id": "bustracking-c7f82",
+    "storage_bucket": "bustracking-c7f82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730674720923:android:e3bb0f8284fb5421b1563e",
+        "android_client_info": {
+          "package_name": "com.dinithi_creation.bustracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730674720923-7tfm2earog0nfdlpuoftcg6vmf53f4gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinithi_creation.bustracking",
+            "certificate_hash": "191970aa8dd31234f0a7da17d055cc1b75a3735a"
+          }
+        },
+        {
+          "client_id": "730674720923-ubbcj916f219iem1aph89igk579e847s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsBN0mYHuIu-kYB2xq9PIP9wChRWLjHR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730674720923-ubbcj916f219iem1aph89igk579e847s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

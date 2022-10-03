@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardviewclik">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/driverproimageid"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/driverfullnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name :- Achintha isuru fernando"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/driverlicenceid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LICENCE NO :- 124587968-869"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/drivernicid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NIC NO :- 9822820055V"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/driverstatusid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS :- ACTIVe"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
