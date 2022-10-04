@@ -1,0 +1,3 @@
+Admin Id = 15789463152486354
+email = testfirebase85@gmail.com
+email password = Firebase1999

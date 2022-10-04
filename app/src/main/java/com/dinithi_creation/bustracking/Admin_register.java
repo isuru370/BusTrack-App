@@ -83,7 +83,7 @@ public class Admin_register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String adminId = adminid.getText().toString();
-                if (adminId.equals("1234")) {
+                if (adminId.equals("15789463152486354")) {
                     Toast.makeText(getApplicationContext(), "Admin Id Valied", Toast.LENGTH_LONG).show();
                     adminid.setEnabled(false);
                     addminname.setEnabled(true);
@@ -164,7 +164,7 @@ public class Admin_register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setType("Image/*");
+                intent.setType("image/*");
                 x = 1;
                 activityResultLauncher.launch(intent);
             }
@@ -174,7 +174,7 @@ public class Admin_register extends AppCompatActivity {
 
     private void saveprofileimage1() {
         rendomId2 = UUID.randomUUID().toString();
-        StorageReference dirproimage = storageReference.child("Admin_profile_image");
+        StorageReference dirproimage = storageReference.child("Admin_profile_image"+rendomId2);
         dirproimage.putFile(imageUrl1)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
