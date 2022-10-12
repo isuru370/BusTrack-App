@@ -29,6 +29,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusTracking">
         <activity
+            android:name=".Fare_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Timetable_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Emargency_activity"
+            android:exported="false" />
+        <activity
             android:name=".Admin_profile"
             android:exported="false" />
         <activity
