@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dinithi_creation.CircleTransform;
+import com.dinithi_creation.driverdetails.Bus_ditails;
 import com.dinithi_creation.driverdetails.driver;
 import com.dinithi_creation.model.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -122,7 +123,7 @@ public class driver_register extends AppCompatActivity {
                                                 pass2, "Driver");
                                         firestore.collection("Driver").add(driver1);
                                         firestore.collection("User").add(userModel);
-                                        startActivity(new Intent(driver_register.this, Driver_Home_Activity.class));
+                                        startActivity(new Intent(driver_register.this, Busregister_activity.class));
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "createUserWithEmail:failure", task.getException());

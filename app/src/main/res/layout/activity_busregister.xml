@@ -37,6 +37,7 @@
             android:background="@color/purple_700"/>
 
         <EditText
+            android:id="@+id/busno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Bus No"
@@ -47,6 +48,7 @@
             android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/busrootno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Root No"
@@ -57,6 +59,7 @@
             android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/busstartcity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Start City"
@@ -67,6 +70,7 @@
         android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/busendcity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="End City"
@@ -77,6 +81,7 @@
             android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/busdistance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Maximum Distance"
@@ -87,6 +92,7 @@
             android:textColor="@color/black"/>
 
         <EditText
+            android:id="@+id/busfare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fare"
@@ -98,6 +104,7 @@
             android:textColor="@color/black"/>
 
         <Button
+            android:id="@+id/bussubmitbtn"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Done"
