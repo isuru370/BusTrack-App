@@ -1,9 +1,11 @@
 package com.dinithi_creation.bustracking;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 
 import com.dinithi_creation.driverdetails.Bus_ditails;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -20,6 +23,7 @@ public class Busregister_activity extends AppCompatActivity {
     private EditText busNo,busRootNo,busStart,busEnd,busDistance,busFare;
     private Button busDitailsSubmitBtn;
     private FirebaseFirestore firestore;
+    private String uid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,7 @@ public class Busregister_activity extends AppCompatActivity {
         String s5 = busFare.getText().toString();
         if(!s.isEmpty() && !s1.isEmpty() && !s2.isEmpty() && !s3.isEmpty() && !s4.isEmpty() && !s5.isEmpty()){
             Bus_ditails bus_ditails = new Bus_ditails();
+            bus_ditails.setBusId(uid);
             bus_ditails.setBusNumber(s);
             bus_ditails.setBusRootNumber(s1);
             bus_ditails.setBusStartCity(s2);
@@ -71,5 +76,13 @@ public class Busregister_activity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"TextFeild is Empty",Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        uid = firebaseAuth.getCurrentUser().getUid();
     }
 }

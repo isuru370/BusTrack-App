@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Createtime_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Added Time"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Start Time (Clik)"
+            android:paddingLeft="20dp"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="End Time (Clik)"
+            android:paddingLeft="20dp"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

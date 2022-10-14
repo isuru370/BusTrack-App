@@ -29,6 +29,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusTracking">
         <activity
+            android:name=".Createtime_activity"
+            android:exported="false" />
+        <activity
             android:name=".Busregister_activity"
             android:exported="false" />
         <activity

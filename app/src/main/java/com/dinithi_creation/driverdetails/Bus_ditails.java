@@ -2,6 +2,7 @@ package com.dinithi_creation.driverdetails;
 
 public class Bus_ditails {
 
+    private String busId;
     private String busNumber;
     private String busRootNumber;
     private String busStartCity;
@@ -10,7 +11,8 @@ public class Bus_ditails {
     private String busFare;
     private String busStatus;
 
-    public Bus_ditails(String busNumber, String busRootNumber, String busStartCity, String busEndCity, String busDistance, String busFare, String busStatus) {
+    public Bus_ditails(String busId,String busNumber, String busRootNumber, String busStartCity, String busEndCity, String busDistance, String busFare, String busStatus) {
+        this.busId = busId;
         this.busNumber = busNumber;
         this.busRootNumber = busRootNumber;
         this.busStartCity = busStartCity;
@@ -21,6 +23,15 @@ public class Bus_ditails {
     }
 
     public Bus_ditails() {
+    }
+
+
+    public String getBusId() {
+        return busId;
+    }
+
+    public void setBusId(String busId) {
+        this.busId = busId;
     }
 
     public String getBusNumber() {
