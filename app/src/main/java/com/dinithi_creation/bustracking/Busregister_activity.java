@@ -69,7 +69,7 @@ public class Busregister_activity extends AppCompatActivity {
             bus_ditails.setBusStatus("0");
             firestore.collection("Bus Details").add(bus_ditails);
             Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_LONG).show();
-            startActivity(new Intent(Busregister_activity.this, Driver_Home_Activity.class));
+            startActivity(new Intent(Busregister_activity.this, Createtime_activity.class));
             finish();
 
         }else{

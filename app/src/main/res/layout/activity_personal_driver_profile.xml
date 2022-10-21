@@ -173,6 +173,18 @@
             android:gravity="left|center"
             android:paddingLeft="20dp"
             android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="Time Table"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
         <Button
             android:layout_width="380dp"
             android:layout_height="wrap_content"

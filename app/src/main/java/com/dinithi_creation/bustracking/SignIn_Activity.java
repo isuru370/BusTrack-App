@@ -155,10 +155,13 @@ public class SignIn_Activity extends AppCompatActivity {
                                             final UserModel userModel = snapshot.toObject(UserModel.class);
                                             if(userModel.getUserType().equals("Driver")){
                                                 startActivity(new Intent(SignIn_Activity.this,Driver_Home_Activity.class));
+                                                finish();
                                             }else if(userModel.getUserType().equals("Passenger")){
                                                 startActivity(new Intent(SignIn_Activity.this,Passenger_Home_Activity.class));
+                                                finish();
                                             }else{
                                                 startActivity(new Intent(SignIn_Activity.this,Admin_Home_Activity.class));
+                                                finish();
                                             }
                                         }
                                     }

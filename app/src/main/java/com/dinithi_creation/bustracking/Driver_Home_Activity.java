@@ -52,7 +52,7 @@ public class Driver_Home_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Driver_Home_Activity.this, SignIn_Activity.class);
+                Intent intent = new Intent(Driver_Home_Activity.this, Createtime_activity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 fAuth.signOut();
