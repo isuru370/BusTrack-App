@@ -16,7 +16,7 @@ public class Driver_Home_Activity extends AppCompatActivity {
 
     private Button logOut;
 
-    ImageView mapDriver,driverditalis;
+    ImageView mapDriver,driverditalis,timeTabelDitails;
 
 
     FirebaseAuth fAuth;
@@ -37,6 +37,7 @@ public class Driver_Home_Activity extends AppCompatActivity {
 
         mapDriver = findViewById(R.id.mapBtnDriver);
         driverditalis = findViewById(R.id.imageView5);
+        timeTabelDitails = findViewById(R.id.imageView7);
 
         mapDriver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +64,12 @@ public class Driver_Home_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Driver_Home_Activity.this,Personal_driver_profile.class));
+            }
+        });
+        timeTabelDitails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Driver_Home_Activity.this,Timetable_ditails.class));
             }
         });
 

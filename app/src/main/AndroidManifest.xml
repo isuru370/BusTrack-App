@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dinithi_creation.bustracking">
+    package="com.dinithi_creation.bustracking" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -27,7 +27,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BusTracking">
+        android:theme="@style/Theme.BusTracking" >
+        <activity
+            android:name=".Licence_image"
+            android:exported="false" />
+        <activity
+            android:name=".Timetable_ditails"
+            android:exported="false" />
         <activity
             android:name=".Createtime_activity"
             android:exported="false" />
@@ -104,7 +110,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

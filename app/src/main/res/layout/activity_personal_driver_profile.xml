@@ -14,7 +14,7 @@
         >
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
@@ -26,6 +26,7 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/prodriverimageid"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/th"
@@ -33,6 +34,7 @@
                     app:shapeAppearanceOverlay="@style/round_image"/>
 
                 <TextView
+                    android:id="@+id/profullname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Achintha isuru fernando"
@@ -40,6 +42,17 @@
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/statusdei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple_500"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
 
             </LinearLayout>
 
@@ -71,6 +84,7 @@
                 android:layout_marginLeft="10dp">
 
                 <ImageView
+                    android:id="@+id/showtextid"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/ic_baseline_edit_24"
@@ -154,6 +168,19 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/updatebtnproid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Edit and save"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"/>
+
         <Button
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -162,11 +189,13 @@
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:gravity="left|center"
-            android:paddingLeft="20dp"/>
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
         <Button
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Personal Info"
+            android:text="Licence Image"
             android:background="@color/purple_700"
             android:textColor="@color/white"
             android:textAllCaps="false"
@@ -175,6 +204,7 @@
             android:layout_marginTop="5dp"/>
 
         <Button
+            android:id="@+id/time_addedbtn"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:text="Time Table"
