@@ -1,6 +1,7 @@
 package com.dinithi_creation.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.dinithi_creation.bustracking.Admin_bus_seen;
 import com.dinithi_creation.bustracking.R;
 import com.dinithi_creation.driverdetails.Bus_ditails;
 
@@ -41,6 +43,15 @@ public class Adminbusdetails extends RecyclerView.Adapter<Adminbusdetails.Adminb
         holder.busRootNo.setText("ROOT NO :- " + table.getBusRootNumber());
         holder.destance.setText("DISTANCE :- "+table.getBusDistance());
         holder.busFare.setText("LKR :- " + table.getBusFare());
+
+        holder.adminBusDBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(context, Admin_bus_seen.class);
+                intent.putExtra("busNo",table.getBusNumber());
+                context.startActivity(intent);
+            }
+        });
 
     }
 

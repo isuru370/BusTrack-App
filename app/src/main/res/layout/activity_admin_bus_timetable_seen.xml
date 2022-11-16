@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_bus_timetable_seen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Table"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start City"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start City"
+            android:paddingLeft="20dp"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End City"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start City"
+            android:paddingLeft="20dp"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start City"
+            android:paddingLeft="20dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/id4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start City"
+            android:paddingLeft="20dp"
+            android:textSize="24dp"/>
+
+        <Button
+            android:id="@+id/idbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Drivers Profile"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

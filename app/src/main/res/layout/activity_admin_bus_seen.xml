@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fare_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fare Ditails"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/busno2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bus Number"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="M/C 001"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/rootno2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Root Number"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/citys2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Strat City"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/citye2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Number"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/km2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="KM"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/mcost2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minimum coust"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fare2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="The fee"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/busstatus02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Status"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/nexttimetable02"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Time Table"
+            android:textAllCaps="false"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
