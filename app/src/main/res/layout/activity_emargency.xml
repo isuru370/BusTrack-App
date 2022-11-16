@@ -49,13 +49,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="(+94) - 768971213"
+            android:text="(+94) - 719157781"
             android:textSize="28dp"
             android:textColor="@color/black"
             android:gravity="center"/>
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnCall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Help Center"

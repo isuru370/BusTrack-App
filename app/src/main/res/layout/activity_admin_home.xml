@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="140dp"
-                android:text="Passenger"
+                android:text="Users"
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 

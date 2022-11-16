@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/payCardviewclik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/A1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Bus No"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/A1"
+                android:hint="Start Time"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/A2"
+                android:hint="!64 KM"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/A3"
+                android:hint="Fare"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/paybtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/A3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="69dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/purple_700"
+                android:text="PAY"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

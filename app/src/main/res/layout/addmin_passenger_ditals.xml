@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passengeraddmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/AB1"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:hint="Bus No"
+                android:textSize="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_below="@id/AB1"/>
+
+            <TextView
+                android:id="@+id/AB2"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AB1"
+                android:layout_marginTop="0dp"
+                android:hint="Start Time"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_below="@id/AB2"/>
+
+            <TextView
+                android:id="@+id/AB3"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AB2"
+                android:layout_marginTop="-1dp"
+                android:hint="!64 KM"
+                android:textSize="16dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_below="@id/AB3"/>
+
+            <TextView
+                android:id="@+id/AB4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AB3"
+                android:hint="Fare"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/nextpasenger"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/AB3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="53dp"
+                android:layout_marginBottom="7dp"
+                android:background="@color/purple_700"
+                android:src="@drawable/ic_baseline_people_24"
+                android:text="PAY"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

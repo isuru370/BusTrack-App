@@ -182,6 +182,7 @@
             android:paddingLeft="20dp"/>
 
         <Button
+            android:id="@+id/editSavebtn"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:text="App Setting"
@@ -193,15 +194,16 @@
             android:layout_marginTop="5dp"/>
 
         <Button
+            android:id="@+id/licenceimgbtn"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Licence Image"
+            android:layout_marginTop="5dp"
             android:background="@color/purple_700"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
             android:gravity="left|center"
             android:paddingLeft="20dp"
-            android:layout_marginTop="5dp"/>
+            android:text="Licence Image"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/time_addedbtn"
@@ -216,9 +218,10 @@
             android:layout_marginTop="5dp"/>
 
         <Button
+            android:id="@+id/changepassword"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Change Email and password"
+            android:text="Change password"
             android:background="@color/purple_700"
             android:textColor="@color/white"
             android:textAllCaps="false"

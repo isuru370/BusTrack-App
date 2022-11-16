@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bus_time_details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUS DETAILS"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Bus No"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dbusid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="73737"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Root No"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dbusrootno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MV34"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="130dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Start City"
+                android:layout_marginTop="170dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dscityid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mathara"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="200dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="End City"
+                android:layout_marginTop="240dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/decityid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colombo"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="270dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Bus Distance"
+                android:layout_marginTop="310dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ddid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:paddingLeft="50dp"
+                android:text="164.8 Km"
+                android:textAllCaps="true"
+                android:textColor="@color/purple_700"
+                android:textSize="26dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Bus Fare"
+                android:layout_marginTop="380dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dpricrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR : 450.00"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="410dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Status"
+                android:layout_marginTop="450dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dstatusid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUS Cancel"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="480dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUS TIME TABLE"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Start AND End Time"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtimeseid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05:00:am - 03:05:am"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 01"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="07:05:pm - mirissa"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="130dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 02"
+                android:layout_marginTop="170dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11:05:pm - Koggala"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="200dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 03"
+                android:layout_marginTop="240dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03:05:am - GAlle"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="270dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 04"
+                android:layout_marginTop="310dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/dtime4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:paddingLeft="50dp"
+                android:text="07:05:am - Hikkaduwa"
+                android:textAllCaps="true"
+                android:textColor="@color/purple_700"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 05"
+                android:layout_marginTop="380dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11:05:am - kaluthara"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="410dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 06"
+                android:layout_marginTop="450dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03:05:pm - Moratuwa"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="480dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Time 07"
+                android:layout_marginTop="520dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/dtime7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="07:05:pm - Wellawatta"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="540dp"
+                android:textColor="@color/purple_700"
+                android:paddingLeft="50dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

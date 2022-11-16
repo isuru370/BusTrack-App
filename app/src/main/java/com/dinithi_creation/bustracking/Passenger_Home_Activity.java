@@ -15,7 +15,7 @@ import com.google.firebase.storage.StorageReference;
 public class Passenger_Home_Activity extends AppCompatActivity {
 
     private Button logOut;
-    ImageView map, profile;
+    ImageView map, profile,busTimeTable,busFare,passemargency;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userId;
@@ -34,6 +34,9 @@ public class Passenger_Home_Activity extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
 
         logOut = findViewById(R.id.logout);
+        busTimeTable = findViewById(R.id.imageView7);
+        busFare = findViewById(R.id.imageView8);
+        passemargency = findViewById(R.id.imageView6);
 
         map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +68,27 @@ public class Passenger_Home_Activity extends AppCompatActivity {
                 startActivity(intent);
                fAuth.signOut();
 
+            }
+        });
+        busTimeTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Passenger_Home_Activity.this, Bus_timeview.class);
+                intent.putExtra("one","One");
+                startActivity(intent);
+            }
+        });
+        busFare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Passenger_Home_Activity.this, pay.class);
+                startActivity(intent);
+            }
+        });
+        passemargency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Passenger_Home_Activity.this,Emargency_activity.class));
             }
         });
 

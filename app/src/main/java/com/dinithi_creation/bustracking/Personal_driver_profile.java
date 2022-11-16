@@ -30,15 +30,17 @@ import com.squareup.picasso.Picasso;
 
 public class Personal_driver_profile extends AppCompatActivity {
 
-    private TextView fullNamePro,statusDri;
+    private TextView fullNamePro, statusDri;
     private EditText proEmail, proPhoneNo, proLicenceNo, proNicNo, proHomeAdd;
     private FirebaseFirestore firestore;
-    private Button btnUpdate,timeAddedBtn;
+    private Button btnUpdate, btnlicenceimg, timeAddedBtn, changePasswordbtn, editSaveBtn;
     private String uid;
     private ShapeableImageView proimagedri;
     private FirebaseStorage storage;
     private FirebaseAuth auth;
     private ImageView showTextId;
+    private String diverlicenceimg1, diverlicenceimg2, id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,9 @@ public class Personal_driver_profile extends AppCompatActivity {
         showTextId = findViewById(R.id.showtextid);
         statusDri = findViewById(R.id.statusdei);
         timeAddedBtn = findViewById(R.id.time_addedbtn);
+        btnlicenceimg = findViewById(R.id.licenceimgbtn);
+        changePasswordbtn = findViewById(R.id.changepassword);
+        editSaveBtn = findViewById(R.id.updatebtnproid);
 
         fullNamePro.setEnabled(false);
         proEmail.setEnabled(false);
@@ -70,7 +75,7 @@ public class Personal_driver_profile extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();
-        Toast.makeText(getApplicationContext(),"Id "+uid,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Id " + uid, Toast.LENGTH_LONG).show();
 
 
         firestore.collection("Driver").whereEqualTo("driverid", uid).get()
@@ -78,6 +83,7 @@ public class Personal_driver_profile extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         for (QueryDocumentSnapshot snapshot : task.getResult()) {
+                            id = snapshot.getId();
                             driver toObjectDriver = snapshot.toObject(driver.class);
                             fullNamePro.setText(toObjectDriver.getDriverfullname());
                             proEmail.setText(toObjectDriver.getDriveremail());
@@ -87,6 +93,9 @@ public class Personal_driver_profile extends AppCompatActivity {
                             proHomeAdd.setText(toObjectDriver.getDriverhomeaddress());
                             statusDri.setText(toObjectDriver.getDriverstatus());
                             String driverproimg = toObjectDriver.getDriverproimg();
+                            diverlicenceimg1 = toObjectDriver.getDriverlicenesphoto1();
+                            diverlicenceimg2 = toObjectDriver.getDriverlicenesphoto2();
+
                             StorageReference storageReference = storage.getReference("Appimage/driverproimage/" + driverproimg);
                             storageReference.getDownloadUrl()
                                     .addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -102,7 +111,6 @@ public class Personal_driver_profile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 fullNamePro.setEnabled(true);
-                proEmail.setEnabled(true);
                 proPhoneNo.setEnabled(true);
                 proLicenceNo.setEnabled(true);
                 proNicNo.setEnabled(true);
@@ -113,7 +121,39 @@ public class Personal_driver_profile extends AppCompatActivity {
         timeAddedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Personal_driver_profile.this,Createtime_activity.class));
+                startActivity(new Intent(Personal_driver_profile.this, Createtime_activity.class));
+
+            }
+        });
+        btnlicenceimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Personal_driver_profile.this, MainActivity.class);
+                intent.putExtra("image1", diverlicenceimg1);
+                intent.putExtra("image2", diverlicenceimg2);
+                startActivity(intent);
+            }
+        });
+        changePasswordbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Personal_driver_profile.this, password_change.class));
+            }
+        });
+        editSaveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firestore.collection("Driver").document(id)
+                        .update("driverphoneno", proPhoneNo.getText().toString()
+                                , "driverlicenes", proLicenceNo.getText().toString()
+                                , "drivernicno", proNicNo.getText().toString()
+                                , "driverhomeaddress", proHomeAdd.getText().toString())
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                Toast.makeText(getApplicationContext(), "Edit Success", Toast.LENGTH_LONG).show();
+                            }
+                        });
             }
         });
     }

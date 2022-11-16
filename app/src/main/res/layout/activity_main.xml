@@ -7,12 +7,60 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Licence Image"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/licimage1"
+        android:layout_width="335dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/th"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uploadbtn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/purple_700"
+        android:text="Change Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licimage1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/licimage2"
+        android:layout_width="335dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="316dp"
+        android:src="@drawable/th"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdate2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_700"
+        android:text="Change Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licimage2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

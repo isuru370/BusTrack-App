@@ -1,11 +1,14 @@
 package com.dinithi_creation.bustracking;
 
+import static com.dinithi_creation.bustracking.Register_Activity.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.dinithi_creation.driverdetails.Bus_ditails;
@@ -48,6 +51,7 @@ public class Timetable_ditails extends AppCompatActivity {
                         for (QueryDocumentSnapshot snapshot : task.getResult()) {
                             Bus_ditails busDitailsTable = snapshot.toObject(Bus_ditails.class);
                             String busNumber = busDitailsTable.getBusNumber();
+                            Log.i(TAG, "Bus No " + busNumber);
                             firestore.collection("BusTimeTable").whereEqualTo("busNumber", busNumber)
                                     .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                                         @Override

@@ -13,6 +13,11 @@
         <entry key="..\:/BusTracking/BusTracking/app/src/main/res/layout/driverview.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_admin_home.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_admin_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_admin_timetable.xml" value="0.12006578947368421" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_adminuserdetails.xml" value="0.1276872964169381" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_bus_ditails_admin.xml" value="0.12006578947368421" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_bus_time_details.xml" value="0.16" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_bus_timeview.xml" value="0.12894736842105264" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_busregister.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_createtime.xml" value="0.25" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_driver_ditels.xml" value="0.20416666666666666" />
@@ -20,16 +25,28 @@
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_driverprofile.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_emargency.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_fare.xml" value="0.22" />
-        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_licence_image.xml" value="0.25" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_licence_image.xml" value="0.15" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_licence_imge.xml" value="0.2" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_passenger_home.xml" value="0.12894736842105264" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_passenger_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_password_change.xml" value="0.1276872964169381" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_pay.xml" value="0.12006578947368421" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_pay_pal.xml" value="0.1276872964169381" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_payment_details.xml" value="0.1276872964169381" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_personal_driver_profile.xml" value="0.22" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_timetable.xml" value="0.20416666666666666" />
-        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_timetable_ditails.xml" value="0.22" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/activity_timetable_ditails.xml" value="0.15" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/addmin_passenger_ditals.xml" value="0.2" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/admin_busdeatails_design.xml" value="0.1276872964169381" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/admintimetabledesign.xml" value="0.1276872964169381" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/bus_faredesing.xml" value="0.16" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/driverview.xml" value="0.20416666666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/fragment_city_colombo.xml" value="0.19010416666666666" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/fragment_city_mathara.xml" value="0.25" />
+        <entry key="..\:/github/BusTrack-App/app/src/main/res/layout/passenger_time_table.xml" value="0.2" />
         <entry key="..\:/github/BusTrack-App/app/src/main/res/menu/menu_item.xml" value="0.20416666666666666" />
       </map>
     </option>
