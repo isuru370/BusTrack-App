@@ -116,7 +116,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyBHKFVQ6v9HrZOHLrbbKHQ7tkMz2JYPw80" />
 
         <activity
             android:name=".MapsStartDriver_Activity"
